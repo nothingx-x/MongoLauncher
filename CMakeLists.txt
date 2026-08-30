@@ -14,10 +14,11 @@ find_package(Qt6 COMPONENTS
         REQUIRED)
 
 qt6_add_resources(QML_RESOURCES
-        qml.qrc
+        ui/qml.qrc
 )
 
-add_executable(MongoLauncher main.cpp ${QML_RESOURCES})
+add_executable(MongoLauncher src/main.cpp ${QML_RESOURCES}
+        src/piston/version_manifest.h)
 target_link_libraries(MongoLauncher
         Qt6::Core
         Qt6::Qml

@@ -1,6 +1,8 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
+#include "piston/version_manifest.h"
+
 int main(int argc, char *argv[]) {
     QGuiApplication a(argc, argv);
     QQmlApplicationEngine engine;
